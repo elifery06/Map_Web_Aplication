@@ -1,51 +1,73 @@
-﻿using deneme1.Models;
+﻿using deneme1.Data;
+using deneme1.Models;
 
 namespace deneme1.Services
 {
     public class ItemService : IItemService
     {
-        private static List<Item> _items = new List<Item>();
+        private readonly ItemDB _context;
+
+        public ItemService(ItemDB context)
+        {
+            _context = context;
+        }
 
         public List<Item> GetAllItems()
         {
-          return _items;
-        }
-        
-        public Item GetItemById(int id)
-        {
-            return _items.FirstOrDefault(i => i.Id == id);
+            return _context.Items.ToList();
         }
 
-        public Response<Item> AddItem(Item item)
+        public Item GetItemById(int id)
         {
-            _items.Add(item);
-            return new Response<Item>(item, true, "Item başarıyla eklendi");
+            return _context.Items.FirstOrDefault(i => i.Id == id);
         }
-        public Response<Item> UpdateItem(int id, Item updatedData)
+
+        public Response AddItem(Item item)
         {
-           var selectedItem = _items.FirstOrDefault(x => x.Id == id);
+            _context.Items.Add(item);
+            _context.SaveChanges();
+            return new Response(item, true, "Item başarıyla eklendi");
+        }
+
+        public Response UpdateItem(int id, Item updatedData)
+        {
+            var selectedItem = _context.Items.FirstOrDefault(x => x.Id == id);
             if (selectedItem != null)
             {
                 selectedItem.Name = updatedData.Name;
-                return new Response<Item>(selectedItem, true, "Item'ı güncelledin tebriks cnm");
+                selectedItem.XCoordinate = updatedData.XCoordinate;
+                selectedItem.YCoordinate = updatedData.YCoordinate;
+                selectedItem.Description = updatedData.Description;
+
+                _context.SaveChanges();
+                return new Response(selectedItem, true, "Item başarıyla güncellendi");
             }
 
-            return new Response<Item>(null, false, "Item yok yok.");
+            return new Response(null, false, "Item bulunamadı.");
         }
-        public Response<Item> DeleteItem(int id)
+
+
+        public Response DeleteItem(int id)
         {
-         var selectedItem = _items.FirstOrDefault(x => x.Id == id);
+            var selectedItem = _context.Items.FirstOrDefault(x => x.Id == id);
             if (selectedItem != null)
             {
-                _items.Remove(selectedItem);
-                return new Response<Item>(selectedItem, true, "Item başarıyla silindi");
+                _context.Items.Remove(selectedItem);
+                _context.SaveChanges();
+                return new Response(selectedItem, true, "Item başarıyla silindi");
             }
 
-            return new Response<Item>(null, false, "Item yok yok.");
+            return new Response(null, false, "Item bulunamadı.");
         }
-
-       
-
-       
     }
 }
+
+
+
+
+
+
+
+
+
+

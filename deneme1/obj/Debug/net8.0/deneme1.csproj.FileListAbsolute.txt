@@ -225,3 +225,10 @@ C:\Users\elif_\source\repos\deneme1\deneme1\bin\Debug\net8.0\runtimes\win\lib\ne
 C:\Users\elif_\source\repos\deneme1\deneme1\bin\Debug\net8.0\runtimes\win\lib\net7.0\System.Windows.Extensions.dll
 C:\Users\elif_\source\repos\deneme1\deneme1\obj\Debug\net8.0\deneme1.RazorAssemblyInfo.cache
 C:\Users\elif_\source\repos\deneme1\deneme1\obj\Debug\net8.0\deneme1.RazorAssemblyInfo.cs
+C:\Users\elif_\source\repos\deneme1\deneme1\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.dll
+C:\Users\elif_\source\repos\deneme1\deneme1\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+C:\Users\elif_\source\repos\deneme1\deneme1\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Design.dll
+C:\Users\elif_\source\repos\deneme1\deneme1\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Relational.dll
+C:\Users\elif_\source\repos\deneme1\deneme1\bin\Debug\net8.0\Npgsql.dll
+C:\Users\elif_\source\repos\deneme1\deneme1\bin\Debug\net8.0\Npgsql.EntityFrameworkCore.PostgreSQL.dll
+C:\Users\elif_\source\repos\deneme1\deneme1\obj\Debug\net8.0\deneme1.sourcelink.json

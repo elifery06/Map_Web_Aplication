@@ -1,12 +1,12 @@
 ﻿namespace deneme1.Models
 {
-    public class Response<T>
+    public class Response : Item
     {
-        public T Value { get; set; }
+        public Object Value { get; set; }
         public bool Result { get; set; }
         public string Message { get; set; }
 
-        public Response(T value, bool result, string message)
+        public Response(Object value, bool result, string message)
         {
             Value = value;
             Result = result;

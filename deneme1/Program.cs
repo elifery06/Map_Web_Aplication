@@ -32,11 +32,23 @@
 //app.UseDeveloperExceptionPage();
 
 using deneme1.Services;
+using deneme1.Data;
+using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddControllers();
+
+//veritabaný baðlantýsýý
+builder.Services.AddDbContext<ItemDB>(options => options.UseNpgsql(builder.Configuration.GetConnectionString("DefaultConnection")));
+
+// PostgreSQL baðlantý dizesini ayarla
+var connectionString = builder.Configuration.GetConnectionString("DefaultConnection");
+
+// DbContext yapýlandýrmasý
+builder.Services.AddDbContext<ItemDB>(options =>
+    options.UseNpgsql(connectionString));
 
 // IItemService arayüzü ve ItemService sýnýfýný dependency injection konteynerine ekleyin.
 builder.Services.AddScoped<IItemService, ItemService>();//ASP.NET Core'un IItemService arayüzü için ItemService sýnýfýný kullanmasýný saðlar. Bu þekilde, ItemsController sýnýfýnýz IItemService türünde bir hizmet talep ettiðinde, ASP.NET Core otomatik olarak ItemService sýnýfýnýn bir örneðini saðlar.

@@ -9,8 +9,8 @@ namespace deneme1.Services
     {
         List<Item> GetAllItems();
         Item GetItemById(int id);
-        Response<Item> AddItem(Item item);
-        Response<Item> UpdateItem(int id, Item updatedData);
-        Response<Item> DeleteItem(int id);
+        Response AddItem(Item item);
+        Response UpdateItem(int id, Item updatedData);
+        Response DeleteItem(int id);
     }
 }

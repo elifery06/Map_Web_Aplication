@@ -1,0 +1,190 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\elif_\\source\\repos\\deneme1\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{E526D71A-9E3B-4D3D-813D-D5FFC7141F8E}|deneme1\\deneme1.csproj|c:\\users\\elif_\\source\\repos\\deneme1\\deneme1\\services\\itemservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E526D71A-9E3B-4D3D-813D-D5FFC7141F8E}|deneme1\\deneme1.csproj|solutionrelative:deneme1\\services\\itemservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E526D71A-9E3B-4D3D-813D-D5FFC7141F8E}|deneme1\\deneme1.csproj|c:\\users\\elif_\\source\\repos\\deneme1\\deneme1\\services\\iitemservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E526D71A-9E3B-4D3D-813D-D5FFC7141F8E}|deneme1\\deneme1.csproj|solutionrelative:deneme1\\services\\iitemservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E526D71A-9E3B-4D3D-813D-D5FFC7141F8E}|deneme1\\deneme1.csproj|c:\\users\\elif_\\source\\repos\\deneme1\\deneme1\\models\\item.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E526D71A-9E3B-4D3D-813D-D5FFC7141F8E}|deneme1\\deneme1.csproj|solutionrelative:deneme1\\models\\item.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E526D71A-9E3B-4D3D-813D-D5FFC7141F8E}|deneme1\\deneme1.csproj|c:\\users\\elif_\\source\\repos\\deneme1\\deneme1\\controllers\\itemscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E526D71A-9E3B-4D3D-813D-D5FFC7141F8E}|deneme1\\deneme1.csproj|solutionrelative:deneme1\\controllers\\itemscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E526D71A-9E3B-4D3D-813D-D5FFC7141F8E}|deneme1\\deneme1.csproj|c:\\users\\elif_\\source\\repos\\deneme1\\deneme1\\data\\itemdb.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E526D71A-9E3B-4D3D-813D-D5FFC7141F8E}|deneme1\\deneme1.csproj|solutionrelative:deneme1\\data\\itemdb.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E526D71A-9E3B-4D3D-813D-D5FFC7141F8E}|deneme1\\deneme1.csproj|c:\\users\\elif_\\source\\repos\\deneme1\\deneme1\\services\\itemdbservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E526D71A-9E3B-4D3D-813D-D5FFC7141F8E}|deneme1\\deneme1.csproj|solutionrelative:deneme1\\services\\itemdbservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E526D71A-9E3B-4D3D-813D-D5FFC7141F8E}|deneme1\\deneme1.csproj|c:\\users\\elif_\\source\\repos\\deneme1\\deneme1\\services\\managerdb.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E526D71A-9E3B-4D3D-813D-D5FFC7141F8E}|deneme1\\deneme1.csproj|solutionrelative:deneme1\\services\\managerdb.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E526D71A-9E3B-4D3D-813D-D5FFC7141F8E}|deneme1\\deneme1.csproj|c:\\users\\elif_\\source\\repos\\deneme1\\deneme1\\models\\response.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E526D71A-9E3B-4D3D-813D-D5FFC7141F8E}|deneme1\\deneme1.csproj|solutionrelative:deneme1\\models\\response.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E526D71A-9E3B-4D3D-813D-D5FFC7141F8E}|deneme1\\deneme1.csproj|c:\\users\\elif_\\source\\repos\\deneme1\\deneme1\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E526D71A-9E3B-4D3D-813D-D5FFC7141F8E}|deneme1\\deneme1.csproj|solutionrelative:deneme1\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E526D71A-9E3B-4D3D-813D-D5FFC7141F8E}|deneme1\\deneme1.csproj|c:\\users\\elif_\\source\\repos\\deneme1\\deneme1\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{E526D71A-9E3B-4D3D-813D-D5FFC7141F8E}|deneme1\\deneme1.csproj|solutionrelative:deneme1\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 8,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Item.cs",
+              "DocumentMoniker": "C:\\Users\\elif_\\source\\repos\\deneme1\\deneme1\\Models\\Item.cs",
+              "RelativeDocumentMoniker": "deneme1\\Models\\Item.cs",
+              "ToolTip": "C:\\Users\\elif_\\source\\repos\\deneme1\\deneme1\\Models\\Item.cs",
+              "RelativeToolTip": "deneme1\\Models\\Item.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-19T12:28:49.284Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "ItemDbService.cs",
+              "DocumentMoniker": "C:\\Users\\elif_\\source\\repos\\deneme1\\deneme1\\Services\\ItemDbService.cs",
+              "RelativeDocumentMoniker": "deneme1\\Services\\ItemDbService.cs",
+              "ToolTip": "C:\\Users\\elif_\\source\\repos\\deneme1\\deneme1\\Services\\ItemDbService.cs",
+              "RelativeToolTip": "deneme1\\Services\\ItemDbService.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAFAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-19T03:53:10.188Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "ManagerDb.cs",
+              "DocumentMoniker": "C:\\Users\\elif_\\source\\repos\\deneme1\\deneme1\\Services\\ManagerDb.cs",
+              "RelativeDocumentMoniker": "deneme1\\Services\\ManagerDb.cs",
+              "ToolTip": "C:\\Users\\elif_\\source\\repos\\deneme1\\deneme1\\Services\\ManagerDb.cs",
+              "RelativeToolTip": "deneme1\\Services\\ManagerDb.cs",
+              "ViewState": "AQIAABcAAAAAAAAAAAA3wCoAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-19T08:24:25.312Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\elif_\\source\\repos\\deneme1\\deneme1\\Program.cs",
+              "RelativeDocumentMoniker": "deneme1\\Program.cs",
+              "ToolTip": "C:\\Users\\elif_\\source\\repos\\deneme1\\deneme1\\Program.cs",
+              "RelativeToolTip": "deneme1\\Program.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAACQAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-19T08:33:16.637Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "IItemService.cs",
+              "DocumentMoniker": "C:\\Users\\elif_\\source\\repos\\deneme1\\deneme1\\Services\\IItemService.cs",
+              "RelativeDocumentMoniker": "deneme1\\Services\\IItemService.cs",
+              "ToolTip": "C:\\Users\\elif_\\source\\repos\\deneme1\\deneme1\\Services\\IItemService.cs",
+              "RelativeToolTip": "deneme1\\Services\\IItemService.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAhAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-19T03:54:17.977Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Response.cs",
+              "DocumentMoniker": "C:\\Users\\elif_\\source\\repos\\deneme1\\deneme1\\Models\\Response.cs",
+              "RelativeDocumentMoniker": "deneme1\\Models\\Response.cs",
+              "ToolTip": "C:\\Users\\elif_\\source\\repos\\deneme1\\deneme1\\Models\\Response.cs",
+              "RelativeToolTip": "deneme1\\Models\\Response.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAAoAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-19T03:53:39.027Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "ItemsController.cs",
+              "DocumentMoniker": "C:\\Users\\elif_\\source\\repos\\deneme1\\deneme1\\Controllers\\ItemsController.cs",
+              "RelativeDocumentMoniker": "deneme1\\Controllers\\ItemsController.cs",
+              "ToolTip": "C:\\Users\\elif_\\source\\repos\\deneme1\\deneme1\\Controllers\\ItemsController.cs",
+              "RelativeToolTip": "deneme1\\Controllers\\ItemsController.cs",
+              "ViewState": "AQIAABgAAAAAAAAAAAAYwBUAAAAzAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-19T03:53:01.108Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "ItemDB.cs",
+              "DocumentMoniker": "C:\\Users\\elif_\\source\\repos\\deneme1\\deneme1\\Data\\ItemDB.cs",
+              "RelativeDocumentMoniker": "deneme1\\Data\\ItemDB.cs",
+              "ToolTip": "C:\\Users\\elif_\\source\\repos\\deneme1\\deneme1\\Data\\ItemDB.cs",
+              "RelativeToolTip": "deneme1\\Data\\ItemDB.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-18T20:59:55.093Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "ItemService.cs",
+              "DocumentMoniker": "C:\\Users\\elif_\\source\\repos\\deneme1\\deneme1\\Services\\ItemService.cs",
+              "RelativeDocumentMoniker": "deneme1\\Services\\ItemService.cs",
+              "ToolTip": "C:\\Users\\elif_\\source\\repos\\deneme1\\deneme1\\Services\\ItemService.cs",
+              "RelativeToolTip": "deneme1\\Services\\ItemService.cs",
+              "ViewState": "AQIAABQAAAAAAAAAAAAAAC8AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-18T20:48:35.032Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\elif_\\source\\repos\\deneme1\\deneme1\\appsettings.json",
+              "RelativeDocumentMoniker": "deneme1\\appsettings.json",
+              "ToolTip": "C:\\Users\\elif_\\source\\repos\\deneme1\\deneme1\\appsettings.json",
+              "RelativeToolTip": "deneme1\\appsettings.json",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-08-19T08:49:33.355Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

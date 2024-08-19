@@ -17,37 +17,37 @@ namespace deneme1.Controllers
         }
 
         [HttpGet]
-        public Response<List<Item>> GetAllItems()
+        public Response GetAllItems()
         {
             var items = _itemService.GetAllItems();
-            return new Response<List<Item>>(items, true, "Öge baþarýyla alýndý");
+            return new Response(items, true, "Öge baþarýyla alýndý");
         }
 
         [HttpGet("{id}")]
-        public Response<Item> GetItem(int id)
+        public Response GetItem(int id)
         {
             var item = _itemService.GetItemById(id);
             if (item == null)
             {
-                return new Response<Item>(null, false, "Item bulunamadý");
+                return new Response(null, false, "Item bulunamadý");
             }
-            return new Response<Item>(item, true, "Öge baþarýyla alýndý");
+            return new Response(item, true, "Öge baþarýyla alýndý");
         }
 
         [HttpPost]
-        public Response<Item> Add([FromBody] Item item)
+        public Response Add([FromBody] Item item)
         {
             return _itemService.AddItem(item);
         }
 
         [HttpPut("{id}")]
-        public Response<Item> Update(int id, [FromBody] Item updatedData)
+        public Response Update(int id, [FromBody] Item updatedData)
         {
             return _itemService.UpdateItem(id, updatedData);
         }
 
         [HttpDelete("{id}")]
-        public Response<Item> Delete(int id)
+        public Response Delete(int id)
         {
             return _itemService.DeleteItem(id);
         }
