@@ -34,6 +34,7 @@
 using deneme1.Services;
 using deneme1.Data;
 using Microsoft.EntityFrameworkCore;
+using deneme1.Models;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -50,8 +51,11 @@ var connectionString = builder.Configuration.GetConnectionString("DefaultConnect
 builder.Services.AddDbContext<ItemDB>(options =>
     options.UseNpgsql(connectionString));
 
-// IItemService arayüzü ve ItemService sýnýfýný dependency injection konteynerine ekleyin.
-builder.Services.AddScoped<IItemService, ItemService>();//ASP.NET Core'un IItemService arayüzü için ItemService sýnýfýný kullanmasýný saðlar. Bu þekilde, ItemsController sýnýfýnýz IItemService türünde bir hizmet talep ettiðinde, ASP.NET Core otomatik olarak ItemService sýnýfýnýn bir örneðini saðlar.
+
+// IItemService ve ItemService sýnýfýný dependency injection konteynerine ekleyin.
+builder.Services.AddScoped<IItemService<Item>, ItemService<Item>>();
+
+//ASP.NET Core'un IItemService arayüzü için ItemService sýnýfýný kullanmasýný saðlar. Bu þekilde, ItemsController sýnýfýnýz IItemService türünde bir hizmet talep ettiðinde, ASP.NET Core otomatik olarak ItemService sýnýfýnýn bir örneðini saðlar.
 
 // Swagger/OpenAPI yapýlandýrmasý
 builder.Services.AddEndpointsApiExplorer();

@@ -10,5 +10,7 @@ namespace deneme1.Data
         }
 
         public DbSet<Item> Items { get; set; }
+
+
     }
 }

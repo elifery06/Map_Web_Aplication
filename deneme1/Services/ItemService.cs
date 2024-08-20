@@ -1,9 +1,13 @@
-﻿using deneme1.Data;
-using deneme1.Models;
+﻿using deneme1.Models;
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using Microsoft.EntityFrameworkCore;
+using deneme1.Data;
 
 namespace deneme1.Services
 {
-    public class ItemService : IItemService
+    public class ItemService<T> : IItemService<T> where T : Item
     {
         private readonly ItemDB _context;
 
@@ -12,62 +16,70 @@ namespace deneme1.Services
             _context = context;
         }
 
-        public List<Item> GetAllItems()
+        public List<T> GetAllItems()
         {
-            return _context.Items.ToList();
+            return _context.Items.OfType<T>().ToList();
         }
 
-        public Item GetItemById(int id)
+        public T GetItemById(int id)
         {
-            return _context.Items.FirstOrDefault(i => i.Id == id);
+            return _context.Items.OfType<T>().SingleOrDefault(i => i.Id == id);
         }
 
-        public Response AddItem(Item item)
+        public Response<T> AddItem(T item)
         {
-            _context.Items.Add(item);
-            _context.SaveChanges();
-            return new Response(item, true, "Item başarıyla eklendi");
-        }
-
-        public Response UpdateItem(int id, Item updatedData)
-        {
-            var selectedItem = _context.Items.FirstOrDefault(x => x.Id == id);
-            if (selectedItem != null)
+            try
             {
-                selectedItem.Name = updatedData.Name;
-                selectedItem.XCoordinate = updatedData.XCoordinate;
-                selectedItem.YCoordinate = updatedData.YCoordinate;
-                selectedItem.Description = updatedData.Description;
-
+                _context.Items.Add(item);
                 _context.SaveChanges();
-                return new Response(selectedItem, true, "Item başarıyla güncellendi");
+                return new Response<T>(item, true, "Item başarıyla eklendi.");
+            }
+            catch (Exception ex)
+            {
+                return new Response<T>(null, false, $"Bir hata oluştu: {ex.Message}");
+            }
+        }
+
+        public Response<T> UpdateItem(int id, T updatedData)
+        {
+            var item = _context.Items.OfType<T>().SingleOrDefault(i => i.Id == id);
+            if (item == null)
+            {
+                return new Response<T>(null, false, "Item bulunamadı.");
             }
 
-            return new Response(null, false, "Item bulunamadı.");
+            try
+            {
+                
+                item = updatedData; 
+                _context.Items.Update(item);
+                _context.SaveChanges();
+                return new Response<T>(item, true, "Item başarıyla güncellendi.");
+            }
+            catch (Exception ex)
+            {
+                return new Response<T>(null, false, $"Bir hata oluştu: {ex.Message}");
+            }
         }
 
-
-        public Response DeleteItem(int id)
+        public Response<T> DeleteItem(int id)
         {
-            var selectedItem = _context.Items.FirstOrDefault(x => x.Id == id);
-            if (selectedItem != null)
+            var item = _context.Items.OfType<T>().SingleOrDefault(i => i.Id == id);
+            if (item == null)
             {
-                _context.Items.Remove(selectedItem);
-                _context.SaveChanges();
-                return new Response(selectedItem, true, "Item başarıyla silindi");
+                return new Response<T>(null, false, "Item bulunamadı.");
             }
 
-            return new Response(null, false, "Item bulunamadı.");
+            try
+            {
+                _context.Items.Remove(item);
+                _context.SaveChanges();
+                return new Response<T>(null, true, "Item başarıyla silindi.");
+            }
+            catch (Exception ex)
+            {
+                return new Response<T>(null, false, $"Bir hata oluştu: {ex.Message}");
+            }
         }
     }
 }
-
-
-
-
-
-
-
-
-
-

@@ -1,16 +1,13 @@
 ﻿using deneme1.Models;
-using System.Collections.Generic;
- 
 
 namespace deneme1.Services
 {
-    
-    public interface IItemService
+    public interface IItemService<T>
     {
-        List<Item> GetAllItems();
-        Item GetItemById(int id);
-        Response AddItem(Item item);
-        Response UpdateItem(int id, Item updatedData);
-        Response DeleteItem(int id);
+        List<T> GetAllItems();
+        T GetItemById(int id);
+        Response<T> AddItem(T item);
+        Response<T> UpdateItem(int id, T updatedData);
+        Response<T> DeleteItem(int id);
     }
 }

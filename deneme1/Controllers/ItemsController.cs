@@ -4,55 +4,59 @@ using Microsoft.AspNetCore.Mvc;
 using System.Collections.Generic;
 
 namespace deneme1.Controllers
-{
+{//unitofwork//generik repository//design pattern
     [ApiController]
     [Route("api/[controller]")]
     public class ItemsController : ControllerBase
     {
-        private readonly IItemService _itemService;
+        private readonly IItemService<Item> _itemService;
 
-        public ItemsController(IItemService itemService)
+        public ItemsController(IItemService<Item> itemService)
         {
             _itemService = itemService;
         }
 
         [HttpGet]
-        public Response GetAllItems()
+        public Response<List<Item>> GetAllItems()
         {
             var items = _itemService.GetAllItems();
-            return new Response(items, true, "Öge baþarýyla alýndý");
+            return new Response<List<Item>>(items, true, "Ögeler baþarýyla alýndý");
         }
 
         [HttpGet("{id}")]
-        public Response GetItem(int id)
+        public Response<Item> GetItem(int id)
         {
             var item = _itemService.GetItemById(id);
             if (item == null)
             {
-                return new Response(null, false, "Item bulunamadý");
+                return new Response<Item>(null, false, "Item bulunamadý");
             }
-            return new Response(item, true, "Öge baþarýyla alýndý");
+            return new Response<Item>(item, true, "Öge baþarýyla alýndý");
         }
 
         [HttpPost]
-        public Response Add([FromBody] Item item)
+        public Response<Item> Add([FromBody] Item item)
         {
             return _itemService.AddItem(item);
         }
 
         [HttpPut("{id}")]
-        public Response Update(int id, [FromBody] Item updatedData)
+        public Response<Item> Update(int id, [FromBody] Item updatedData)
         {
             return _itemService.UpdateItem(id, updatedData);
         }
 
         [HttpDelete("{id}")]
-        public Response Delete(int id)
+        public Response<Item> Delete(int id)
         {
             return _itemService.DeleteItem(id);
         }
     }
 }
+
+
+
+
 //using deneme1.Models;
 //using deneme1.Services;
 //using Microsoft.AspNetCore.Mvc;
